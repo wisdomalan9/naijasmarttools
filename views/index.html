@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NaijaSmartTools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+
+<nav class="navbar">
+<h1 class="logo">NaijaSmartTools</h1>
+
+<ul class="nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/tools/index.html">Tools</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</nav>
+
+<header class="hero">
+
+<h2>Smart Online Tools for Nigerians</h2>
+<p>Free tools for business, school and everyday use.</p>
+
+<a class="btn" href="/tools/pos.html">Use POS Calculator</a>
+
+</header>
+
+<section class="tools">
+
+<h3>Popular Tools</h3>
+
+<div class="tool-grid">
+
+<a href="/tools/pos.html" class="tool-card">
+POS Charge Calculator
+</a>
+
+<a href="/tools/loan.html" class="tool-card">
+Loan Calculator
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 NaijaSmartTools</p>
+
+</footer>
+<script>
+if ("serviceWorker" in navigator) {
+navigator.serviceWorker.register("/sw.js");
+}
+</script>
+</body>
+</html>

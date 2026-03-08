@@ -1,0 +1,106 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0FA958;
+padding:15px;
+color:white;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:60px;
+background:white;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#0FA958;
+color:white;
+text-decoration:none;
+}
+
+/* TOOLS */
+
+.tools{
+padding:40px;
+text-align:center;
+}
+
+.tool-grid{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+.tool-card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-decoration:none;
+color:black;
+width:200px;
+text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+transition:0.2s;
+}
+
+.tool-card:hover{
+transform:scale(1.05);
+}
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+}
+/* MOBILE DESIGN */
+
+@media (max-width: 768px){
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.nav-links{
+flex-direction:column;
+gap:10px;
+}
+
+.tool-grid{
+flex-direction:column;
+align-items:center;
+}
+
+.hero{
+padding:30px;
+}
+
+}
