@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NaijaSmartTools Calculator</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<h1 id="toolTitle">Calculator</h1>
+
+<input id="num1" type="number" placeholder="Enter first value">
+<input id="num2" type="number" placeholder="Enter second value">
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const tool = params.get("tool");
+
+const title = document.getElementById("toolTitle");
+
+if(tool === "pos"){
+title.innerText = "POS Charge Calculator";
+}
+
+if(tool === "loan"){
+title.innerText = "Loan Interest Calculator";
+}
+
+function calculate(){
+
+let a = Number(document.getElementById("num1").value);
+let b = Number(document.getElementById("num2").value);
+
+let result = a + b;
+
+document.getElementById("result").innerText = result;
+
+}
+
+</script>
+
+</body>
+</html>
